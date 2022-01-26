@@ -1,0 +1,25 @@
+﻿<Window x:Class="Kalkur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkur"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="Tb1" Text="Выберите арифметическую операцию"></TextBlock>
+            <ComboBox Name="CBox1"  VerticalAlignment="Top" SelectionChanged="CBox1_SelectionChanged"></ComboBox>
+            <StackPanel Orientation ="Horizontal" HorizontalAlignment="Center">
+            <TextBox x:Name="Tb2" Width="150" ></TextBox>
+            <TextBlock x:Name="Tb3" Text="+"></TextBlock>
+            <TextBox x:Name="Tb4" Width="150" ></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <Button Name="vich" Content="Вычислить" Click="vich_Click"></Button>
+                <TextBlock x:Name="Tb5" Text="Результат:" ></TextBlock>
+                <TextBox x:Name="Tb6" Width="150" HorizontalAlignment="Center" ></TextBox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
